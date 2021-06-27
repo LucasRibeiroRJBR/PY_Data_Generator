@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>841</width>
-    <height>579</height>
+    <height>630</height>
    </rect>
   </property>
   <property name="contextMenuPolicy">
@@ -154,9 +154,9 @@ QLineEdit {
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>180</y>
+     <y>220</y>
      <width>821</width>
-     <height>331</height>
+     <height>341</height>
     </rect>
    </property>
   </widget>
@@ -164,7 +164,7 @@ QLineEdit {
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>530</y>
+     <y>580</y>
      <width>151</width>
      <height>30</height>
     </rect>
@@ -177,7 +177,7 @@ QLineEdit {
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>140</y>
+     <y>180</y>
      <width>161</width>
      <height>21</height>
     </rect>
@@ -204,9 +204,39 @@ QLineEdit {
     <rect>
      <x>280</x>
      <y>10</y>
-     <width>191</width>
+     <width>161</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::WheelFocus</enum>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="correctionMode">
+    <enum>QAbstractSpinBox::CorrectToPreviousValue</enum>
+   </property>
+   <property name="keyboardTracking">
+    <bool>true</bool>
+   </property>
+   <property name="showGroupSeparator" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
+   <property name="maximum">
+    <number>100000000</number>
+   </property>
+   <property name="displayIntegerBase">
+    <number>10</number>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
@@ -232,7 +262,7 @@ QLineEdit {
     </rect>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -286,6 +316,41 @@ QLineEdit {
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Campos:</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="tb_campos">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>731</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>true</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
   </widget>
  </widget>
  <resources/>
