@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'c:\Users\user\Documents\GitHub\gerador_de_dados_sql\gui\tela.ui'
+# Form implementation generated from reading ui file 'c:\Users\user\Documents\GitHub\PY_Data_Generator\ui\tela.ui'
 #
 # Created by: PyQt6 UI code generator 6.0.3
 #
@@ -9,220 +9,36 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Form(object):
-    def setupUi(self, Form):
-        Form.setObjectName("Form")
-        Form.resize(841, 630)
-        Form.setContextMenuPolicy(QtCore.Qt.ContextMenuPolicy.DefaultContextMenu)
-        Form.setStyleSheet("*\n"
-"{\n"
-"    font: 75 16pt \"Consolas\";\n"
-"    background-color: #1e1d23;\n"
-"    color: #a9b7c6;\n"
-"}\n"
-"\n"
-"QWidget#Form\n"
-"{\n"
-"    background-color: #1e1d23;\n"
-"}\n"
-"\n"
-"QLabel\n"
-"{\n"
-"    font: 75 16pt \"Consolas\";\n"
-"}\n"
-"\n"
-"QCheckBox {\n"
-"    color: #a9b7c6;\n"
-"    padding: 2px;\n"
-"}\n"
-"\n"
-"QCheckBox:disabled\n"
-"{\n"
-"    color: #808086;\n"
-"    padding: 2px;\n"
-"}\n"
-"\n"
-"QCheckBox:hover\n"
-"{\n"
-"    border-radius:4px;\n"
-"    border-style:solid;\n"
-"    padding-left: 1px;\n"
-"    padding-right: 1px;\n"
-"    padding-bottom: 1px;\n"
-"    padding-top: 1px;\n"
-"    border-width:1px;\n"
-"    border-color: rgb(87, 97, 106);\n"
-"    background-color:#1e1d23;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:checked\n"
-"{\n"
-"    height: 10px;\n"
-"    width: 10px;\n"
-"    border-style:solid;\n"
-"    border-width: 1px;\n"
-"    border-color: #04b97f;\n"
-"    color: #a9b7c6;\n"
-"    background-color: #04b97f;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:unchecked\n"
-"{\n"
-"    height: 10px;\n"
-"    width: 10px;\n"
-"    border-style:solid;\n"
-"    border-width: 1px;\n"
-"    border-color: #04b97f;\n"
-"    color: #a9b7c6;\n"
-"    background-color: transparent;\n"
-"}\n"
-"\n"
-"QPushButton{\n"
-"    border-style: solid;\n"
-"    border-top-color: transparent;\n"
-"    border-right-color: transparent;\n"
-"    border-left-color: transparent;\n"
-"    border-bottom-color: transparent;\n"
-"    border-width: 1px;\n"
-"    border-style: solid;\n"
-"    color: #a9b7c6;\n"
-"    padding: 2px;\n"
-"    background-color: #1e1d23;\n"
-"}\n"
-"QPushButton::default{\n"
-"    border-style: inset;\n"
-"    border-top-color: transparent;\n"
-"    border-right-color: transparent;\n"
-"    border-left-color: transparent;\n"
-"    border-bottom-color: #04b97f;\n"
-"    border-width: 1px;\n"
-"    color: #a9b7c6;\n"
-"    padding: 2px;\n"
-"    background-color: #1e1d23;\n"
-"}\n"
-"QPushButton:hover{\n"
-"    border-style: solid;\n"
-"    border-top-color: transparent;\n"
-"    border-right-color: transparent;\n"
-"    border-left-color: transparent;\n"
-"    border-bottom-color: #37efba;\n"
-"    border-bottom-width: 1px;\n"
-"    border-style: solid;\n"
-"    color: #FFFFFF;\n"
-"    padding-bottom: 2px;\n"
-"    background-color: #1e1d23;\n"
-"}\n"
-"QPushButton:pressed{\n"
-"    border-style: solid;\n"
-"    border-top-color: transparent;\n"
-"    border-right-color: transparent;\n"
-"    border-left-color: transparent;\n"
-"    border-bottom-color: #37efba;\n"
-"    border-bottom-width: 2px;\n"
-"    border-style: solid;\n"
-"    color: #37efba;\n"
-"    padding-bottom: 1px;\n"
-"    background-color: #1e1d23;\n"
-"}\n"
-"QPushButton:disabled{\n"
-"    border-style: solid;\n"
-"    border-top-color: transparent;\n"
-"    border-right-color: transparent;\n"
-"    border-left-color: transparent;\n"
-"    border-bottom-color: #808086;\n"
-"    border-bottom-width: 2px;\n"
-"    border-style: solid;\n"
-"    color: #808086;\n"
-"    padding-bottom: 1px;\n"
-"    background-color: #1e1d23;\n"
-"}\n"
-"QLineEdit {\n"
-"    border-width: 1px; border-radius: 4px;\n"
-"    border-color: rgb(58, 58, 58);\n"
-"    border-style: inset;\n"
-"    padding: 0 8px;\n"
-"    color: #a9b7c6;\n"
-"    background:#1e1d23;\n"
-"    selection-background-color:#007b50;\n"
-"    selection-color: #FFFFFF;\n"
-"}")
-        self.resul = QtWidgets.QTextBrowser(Form)
-        self.resul.setGeometry(QtCore.QRect(10, 220, 821, 341))
-        self.resul.setObjectName("resul")
-        self.bt_copiar = QtWidgets.QPushButton(Form)
-        self.bt_copiar.setGeometry(QtCore.QRect(20, 580, 151, 30))
-        self.bt_copiar.setObjectName("bt_copiar")
-        self.bt_gerar = QtWidgets.QPushButton(Form)
-        self.bt_gerar.setGeometry(QtCore.QRect(340, 180, 161, 21))
-        self.bt_gerar.setObjectName("bt_gerar")
-        self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(10, 9, 264, 31))
+class Ui_Principal(object):
+    def setupUi(self, Principal):
+        Principal.setObjectName("Principal")
+        Principal.resize(493, 236)
+        Principal.setStyleSheet("")
+        self.bt_pessoa = QtWidgets.QPushButton(Principal)
+        self.bt_pessoa.setGeometry(QtCore.QRect(10, 60, 151, 41))
+        self.bt_pessoa.setObjectName("bt_pessoa")
+        self.bt_endereco = QtWidgets.QPushButton(Principal)
+        self.bt_endereco.setGeometry(QtCore.QRect(10, 110, 151, 41))
+        self.bt_endereco.setObjectName("bt_endereco")
+        self.bt_telefone = QtWidgets.QPushButton(Principal)
+        self.bt_telefone.setGeometry(QtCore.QRect(10, 160, 151, 41))
+        self.bt_telefone.setObjectName("bt_telefone")
+        self.label = QtWidgets.QLabel(Principal)
+        self.label.setGeometry(QtCore.QRect(20, 10, 461, 41))
+        self.label.setAlignment(QtCore.Qt.Alignment.AlignCenter)
         self.label.setObjectName("label")
-        self.spinBox = QtWidgets.QSpinBox(Form)
-        self.spinBox.setGeometry(QtCore.QRect(280, 10, 161, 31))
-        self.spinBox.setFocusPolicy(QtCore.Qt.FocusPolicy.WheelFocus)
-        self.spinBox.setFrame(True)
-        self.spinBox.setAlignment(QtCore.Qt.Alignment.AlignCenter)
-        self.spinBox.setReadOnly(False)
-        self.spinBox.setCorrectionMode(QtWidgets.QAbstractSpinBox.CorrectionMode.CorrectToPreviousValue)
-        self.spinBox.setKeyboardTracking(True)
-        self.spinBox.setProperty("showGroupSeparator", False)
-        self.spinBox.setSuffix("")
-        self.spinBox.setMaximum(100000000)
-        self.spinBox.setDisplayIntegerBase(10)
-        self.spinBox.setObjectName("spinBox")
-        self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(10, 90, 180, 31))
-        self.label_2.setObjectName("label_2")
-        self.input_nom_tabela = QtWidgets.QLineEdit(Form)
-        self.input_nom_tabela.setGeometry(QtCore.QRect(200, 90, 631, 31))
-        self.input_nom_tabela.setObjectName("input_nom_tabela")
-        self.layoutWidget = QtWidgets.QWidget(Form)
-        self.layoutWidget.setGeometry(QtCore.QRect(10, 49, 821, 30))
-        self.layoutWidget.setObjectName("layoutWidget")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget)
-        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.cb_nome = QtWidgets.QCheckBox(self.layoutWidget)
-        self.cb_nome.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
-        self.cb_nome.setAutoRepeat(False)
-        self.cb_nome.setObjectName("cb_nome")
-        self.horizontalLayout.addWidget(self.cb_nome)
-        self.cb_sobrenome = QtWidgets.QCheckBox(self.layoutWidget)
-        self.cb_sobrenome.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
-        self.cb_sobrenome.setObjectName("cb_sobrenome")
-        self.horizontalLayout.addWidget(self.cb_sobrenome)
-        self.cb_idade = QtWidgets.QCheckBox(self.layoutWidget)
-        self.cb_idade.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
-        self.cb_idade.setObjectName("cb_idade")
-        self.horizontalLayout.addWidget(self.cb_idade)
-        self.cb_uf = QtWidgets.QCheckBox(self.layoutWidget)
-        self.cb_uf.setLayoutDirection(QtCore.Qt.LayoutDirection.LeftToRight)
-        self.cb_uf.setObjectName("cb_uf")
-        self.horizontalLayout.addWidget(self.cb_uf)
-        self.label_3 = QtWidgets.QLabel(Form)
-        self.label_3.setGeometry(QtCore.QRect(10, 130, 81, 31))
-        self.label_3.setObjectName("label_3")
-        self.tb_campos = QtWidgets.QTextBrowser(Form)
-        self.tb_campos.setGeometry(QtCore.QRect(100, 130, 731, 31))
-        self.tb_campos.setMouseTracking(True)
-        self.tb_campos.setAcceptDrops(True)
-        self.tb_campos.setAutoFillBackground(False)
-        self.tb_campos.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
-        self.tb_campos.setObjectName("tb_campos")
+        self.bt_sair = QtWidgets.QPushButton(Principal)
+        self.bt_sair.setGeometry(QtCore.QRect(384, 192, 101, 41))
+        self.bt_sair.setObjectName("bt_sair")
 
-        self.retranslateUi(Form)
-        QtCore.QMetaObject.connectSlotsByName(Form)
+        self.retranslateUi(Principal)
+        QtCore.QMetaObject.connectSlotsByName(Principal)
 
-    def retranslateUi(self, Form):
+    def retranslateUi(self, Principal):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
-        self.bt_copiar.setText(_translate("Form", "COPIAR"))
-        self.bt_gerar.setText(_translate("Form", "GERAR"))
-        self.label.setText(_translate("Form", "Quantidade de queries:"))
-        self.label_2.setText(_translate("Form", "Nome da Tabela:"))
-        self.cb_nome.setText(_translate("Form", "Nome"))
-        self.cb_sobrenome.setText(_translate("Form", "Sobrenome"))
-        self.cb_idade.setText(_translate("Form", "Idade"))
-        self.cb_uf.setText(_translate("Form", "UF"))
-        self.label_3.setText(_translate("Form", "Campos:"))
+        Principal.setWindowTitle(_translate("Principal", "Form"))
+        self.bt_pessoa.setText(_translate("Principal", "Pessoa"))
+        self.bt_endereco.setText(_translate("Principal", "Endereço"))
+        self.bt_telefone.setText(_translate("Principal", "Telefone"))
+        self.label.setText(_translate("Principal", "Gerador de Dados"))
+        self.bt_sair.setText(_translate("Principal", "Sair"))
